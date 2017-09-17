@@ -20,6 +20,7 @@ from lists import views
 urlpatterns = [
     # url(r'', include('lists.urls')),
     url(r'^$', views.home_page, name='home'),
+    url(r'^lists/the-only-list-in-the-world', views.view_list, name='view_list'),
     # url(r'^$', home_page),
     url(r'^admin/', admin.site.urls),
 ]
